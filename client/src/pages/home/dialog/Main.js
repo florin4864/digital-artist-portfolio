@@ -96,8 +96,9 @@ export const Dialog = forwardRef(({onSubmit}, ref) => {
                             />
                             <textarea
                                 placeholder='Description...'
+                                value={_description}
                                 onInput={(ev) => {_setDescription(() => ev.target.value)}}
-                            >{_description}</textarea>
+                            ></textarea>
                         </div>
                     </div>
                 </div> :
