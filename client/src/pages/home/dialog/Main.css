@@ -1,0 +1,48 @@
+.dialog {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    padding: 2rem;
+}
+
+.dialog .contents {
+    width: 32rem;
+    height: 20rem;
+    margin: auto;
+}
+@media (max-width: 640px) {
+    .dialog .contents {
+        width: calc(100% - 4rem);
+        height: calc(100% - 4rem);
+    }
+}
+
+.dialog .contents .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--dark-background);
+    border-bottom: 2px solid var(--lighter-background);
+    /* border-radius: 1rem 1rem 0 0; */
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.dialog .contents .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--darker-background);
+    /* border-radius: 0 0 1rem 1rem; */
+    border-radius: var(--border-radius);
+}
+.dialog .contents .body textarea {
+    height: 10rem;
+}

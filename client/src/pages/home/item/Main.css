@@ -1,0 +1,104 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    margin: 0 10rem 0 auto;
+    background-color: var(--dark-background);
+    border-radius: var(--border-radius);
+}
+@media (max-width: 1200px) {
+    .item {
+        width: 100%;
+        margin: 0 !important;
+        border-radius: var(--border-radius);
+    }
+}
+
+.item .container {
+    display: flex;
+    flex-direction: row;
+    margin: 0.4rem 1rem;
+    gap: 1rem;
+}
+
+.item.reverse {
+    margin: 0 auto 0 10rem;
+}
+.item.reverse .container {
+    flex-direction: row-reverse;
+}
+@media (max-width: 640px) {
+    .item .container {
+        flex-direction: column !important;
+    }
+}
+
+
+
+.item .container .thumbnail-link {
+    flex-shrink: 0;
+}
+.item .container .thumbnail-image {
+    width: 100%;
+    height: 15rem;
+    border-radius: var(--border-radius);
+}
+@media (max-width: 640px) {
+    .item .container .thumbnail-image {
+        height: auto;
+    }
+}
+
+
+
+.item .container .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.item .container .details .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item .container .details .header .title-link-group {
+    display: flex;
+    flex-direction: column;
+}
+.item .container .details .header .title {
+    text-decoration: none;
+    white-space: pre-wrap;
+    width: 100%;
+    margin: 0;
+    font-size: 1.2rem;
+}
+.item .container .details .header .client-link {
+    text-decoration: none;
+    white-space: pre-wrap;
+    width: 100%;
+    margin: 0;
+    font-size: 0.8rem;
+}
+.item .container .details .header .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+
+.item .container .details .body {
+    flex-grow: 1;
+}
+.item .container .details .body .description {
+    background-color: var(--darker-background);
+    border-radius: var(--border-radius);
+    height: calc(100% - 2rem);
+    width: calc(100% - 2rem);
+    margin: 0;
+    padding: 1rem;
+}

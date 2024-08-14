@@ -1,0 +1,17 @@
+services:
+    server:
+        build: .
+        container_name: dap-server
+        command: bash /webapp/scripts/run-dev-server.sh
+        ports:
+            - 8050:8050
+        volumes:
+            - .:/webapp
+    client:
+        build: .
+        container_name: dap-client
+        command: bash /webapp/scripts/run-dev-client.sh
+        ports:
+            - 8060:8060
+        volumes:
+            - .:/webapp

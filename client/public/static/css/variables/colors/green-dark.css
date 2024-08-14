@@ -1,0 +1,38 @@
+/************************* CSS Variables *************************/
+:root {
+    --primary-color-light: #00b487;
+    --primary-color-dark: #1e322d;
+
+    --red-light-background: #821E2D;
+    --red-dark-background: #460A19;
+
+    --yellow-light-background: #AA5F23;
+    --yellow-dark-background: #5A320F;
+
+    --green-light-background: #19734B;
+    --green-dark-background: #144132;
+
+    --blue-light-background: #284691;
+    --blue-dark-background: #142850;
+
+    --lightest-background: #505050;
+    --lightest-text: #FFFFFF;
+
+    --lighter-background: #464646;
+    --lighter-text: #FAFAFA;
+
+    --light-background: #3C3C3C;
+    --light-text: #E1E1E1;
+
+    --medium-background: #323232;
+    --medium-text: #C8C8C8;
+
+    --dark-background: #282828;
+    --dark-text: #AFAFAF;
+
+    --darker-background: #1E1E1E;
+    --darker-text: #969696;
+
+    --darkest-background: #141414;
+    --darkest-text: #7D7D7D;
+}

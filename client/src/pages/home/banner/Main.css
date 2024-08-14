@@ -1,0 +1,59 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40rem;
+    flex-shrink: 0;
+    background-color: var(--darker-background);
+    background-image: url('/public/static/images/profile-image.png');
+    background-position: bottom right;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media (min-width: 1000px) {
+    .banner {
+        background-blend-mode: unset;
+    }
+}
+
+.banner .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 1rem;
+}
+@media (min-width: 640px) {
+    .banner .container {
+        margin: 0 10rem;
+    }
+}
+.banner .container .logo {
+    mix-blend-mode: exclusion;
+}
+.banner .container .title {
+    font-size: 4rem;
+    margin: 0;
+}
+.banner .container .sub-title {
+    font-size: 2rem;
+    color: var(--primary-color-light);
+    margin: 0;
+}
+.banner .container .text {
+    margin: 0;
+}
+.banner .container .social {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+.banner .container .social > span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.banner .container .social > span > a {
+    margin: auto 0;
+}

@@ -1,0 +1,47 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-background);
+    height: 5rem;
+    width: calc(100% - 1rem);
+    margin: 1rem 0;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+    box-shadow: 0 4px 20px black;
+}
+.navbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 2rem;
+}
+.navbar .container .logo {
+    mix-blend-mode: exclusion;
+}
+.navbar .container .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.navbar .container .buttons button {
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: center;
+}
+.navbar .container .buttons .create {
+    background-image: url('/public/static/images/icons/create.svg');
+}
+.navbar .container .buttons .logout {
+    background-image: url('/public/static/images/icons/logout.svg');
+}
+.navbar .container .buttons .login {
+    background-image: url('/public/static/images/icons/login.svg');
+}
+
+.navbar .container > * {
+    margin: auto 0;
+}

@@ -1,0 +1,97 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.message > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.message > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 2rem;
+}
+
+.message .title {
+    text-align: center;
+    margin: 0.2rem 2rem;
+    font-size: 1.4rem;
+}
+
+.message .body {
+    margin: 1rem;
+}
+
+.message .footer {
+    margin: 0;
+    padding: 0.02rem 1rem 0 1rem;
+    font-size: 0.8rem;
+}
+
+.message .remove {
+    height: auto;
+    border: none;
+    opacity: 0.4;
+}
+.message .remove:hover {
+    opacity: 1;
+}
+
+.message.error {
+    background-color: var(--red-dark-background);
+}
+.message.error > div {
+    background-color: var(--red-light-background);
+}
+.message.error .body {
+    color: var(--lighter-text);
+}
+.message.error .remove {
+    background-color: var(--red-dark-background);
+    color: var(--lighter-text);
+}
+
+.message.warning {
+    background-color: var(--yellow-dark-background);
+}
+.message.warning > div {
+    background-color: var(--yellow-light-background);
+}
+.message.warning .body {
+    color: var(--lighter-text);
+}
+.message.warning .remove {
+    background-color: var(--yellow-dark-background);
+    color: var(--lighter-text);
+}
+
+.message.success {
+    background-color: var(--green-dark-background);
+}
+.message.success > div {
+    background-color: var(--green-light-background);
+}
+.message.success .body {
+    color: var(--lighter-text);
+}
+.message.success .remove {
+    background-color: var(--green-dark-background);
+    color: var(--lighter-text);
+}
+
+.message.info {
+    background-color: var(--blue-dark-background);
+}
+.message.info > div {
+    background-color: var(--blue-light-background);
+}
+.message.info .body {
+    color: var(--lighter-text);
+}
+.message.info .remove {
+    background-color: var(--blue-dark-background);
+    color: var(--lighter-text);
+}

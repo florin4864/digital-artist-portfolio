@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: var(--border-radius);
+    margin: 0;
+    background-color: var(--dark-background);
+    background-size: 40rem;
+    padding: 10rem 0;
+}
+.card .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 1rem;
+}
+@media (min-width: 640px) {
+    .card .container {
+        margin: 0 10rem;
+    }
+}
+.card .container .logo {
+    mix-blend-mode: exclusion;
+}
+.card .container .title {
+    font-size: 2rem;
+    margin: 0;
+}
+.card .container .text {
+    margin: 0;
+}
